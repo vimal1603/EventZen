@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+<<<<<<< HEAD
 import Corporate from './Event/Corprate';
 import Home from './Home/Home';
 import Nav from './Nav/Nav';
@@ -16,6 +17,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App/>
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+>>>>>>> 80c5d3d (Initialize project using Create React App)
   </React.StrictMode>
 );
 

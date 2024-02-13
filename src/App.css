@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 
 body{
   background-image: url("./Images/event1.png");
   background-size: cover;
   
+=======
+.App {
+  text-align: center;
+>>>>>>> 80c5d3d (Initialize project using Create React App)
 }
 
 .App-logo {
@@ -25,7 +30,10 @@ body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80c5d3d (Initialize project using Create React App)
 }
 
 .App-link {
