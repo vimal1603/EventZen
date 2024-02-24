@@ -1,0 +1,17 @@
+.ab
+{
+    display: flex;
+    padding: 30px;
+    height: 300px;
+    background-color: rgb(38, 212, 189);
+}
+.ab span
+{
+    padding-left: 40px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
