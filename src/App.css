@@ -6,14 +6,7 @@
 body{
   background-image: url("./Images/event1.png");
   background-size: cover;
-<<<<<<< HEAD
-  
-=======
-.App {
-  text-align: center;
->>>>>>> 80c5d3d (Initialize project using Create React App)
-=======
- background-attachment: fixed;
+
   
 >>>>>>> 3d42d72 (updated)
 }

@@ -56,6 +56,7 @@ import b from '../Images/b1.jpg';
 import './Birthday.css'; // Import the CSS file
 import BdaySlide from './BdaySlide';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 const Birthday = () => {
   const navigate=useNavigate();
   const Click = () =>
@@ -87,7 +88,7 @@ const Birthday = () => {
           <br></br>
           <br></br>
           <center>
-          <BdaySlide/>
+          
           </center>
           <br></br>
           <br></br>
