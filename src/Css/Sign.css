@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .all{
     
     margin-left: 100px;
@@ -49,3 +50,56 @@
 Link{
     color: aliceblue;
 }
+=======
+.all{
+    
+    margin-left: 100px;
+    margin-top: 0px;
+    
+}
+.im{
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+    border-right: 0px;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.log{
+    border-style: solid;
+    border-width: 3px;
+    border-left: 0px;
+    border-color: aliceblue;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: auto;
+    width:auto;
+    background-image: url('../Images/bac.jpg');
+    background-size: 1280px;
+    
+}
+.ty{
+    color: aliceblue;
+}
+.ti{
+   background-color: rgba(255, 255, 255, 0.437);  
+}
+.tl{
+    background-color: rgba(240, 248, 255, 0.436);
+}
+.img{
+    border-radius: 50%;
+}
+.ch{
+    color: aliceblue;
+}
+.co{
+    color: aliceblue;
+
+}
+Link{
+    color: aliceblue;
+}
+>>>>>>> 3d42d72 (updated)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 input
 {
     height: 60px;
@@ -15,3 +16,22 @@ input
     font-size: 20;
     padding-left: 30px;
 }
+=======
+input
+{
+    height: 60px;
+    width: 300px;
+    border-radius: 40px;
+    padding-left: 30px;
+}
+.button
+{
+    border-radius: 30px;
+    background-color: darkcyan;
+    height: 50px;
+    width: 140px;
+    color:white;
+    font-size: 20;
+    padding-left: 30px;
+}
+>>>>>>> 3d42d72 (updated)
