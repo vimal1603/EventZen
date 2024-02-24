@@ -82,7 +82,7 @@ const Home = () => {
     <div className="container">
       <div>
         <center>
-          <h1 style={{color:'white'}}>Welcome to EventZen</h1>
+          <h1 style={{color:'white'}}>Welcome to EventZen,</h1>
           <br />
           <SlideShow />
           <br />
