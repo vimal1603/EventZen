@@ -109,7 +109,7 @@ const Book = () => {
                 
                 <br></br>
                 <span style={{paddingLeft:'80px'}}>
-               <Date/>  
+               <Date/>
                </span>
                <br></br>
                <br></br>
