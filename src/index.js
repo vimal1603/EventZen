@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3d42d72 (updated)
 import Corporate from './Event/Corprate';
 import Home from './Home/Home';
 import Nav from './Nav/Nav';
@@ -15,24 +10,11 @@ import Corp from './Event/Corp';
 import Hoc from './Hoc/Hoc';
 import WrappedComponent from './UseContext/WrappedComponent';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App/>
 
-<<<<<<< HEAD
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App/>
-=======
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
->>>>>>> 80c5d3d (Initialize project using Create React App)
-=======
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App/>
->>>>>>> 3d42d72 (updated)
   </React.StrictMode>
 );
 

@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3d42d72 (updated)
+
 
 body{
   background-image: url("./Images/event1.png");
   background-size: cover;
 
   
->>>>>>> 3d42d72 (updated)
+
 }
 
 .App-logo {
@@ -31,14 +28,7 @@ body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 80c5d3d (Initialize project using Create React App)
-=======
-
->>>>>>> 3d42d72 (updated)
 }
 
 .App-link {

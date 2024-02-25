@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .price 
 {
     background-color:white;
@@ -40,47 +40,4 @@
     color:white;
   }
 
-=======
-.price 
-{
-    background-color:white;
-    padding: auto;
-    border: 3px solid whitesmoke;
-    width: auto;
-    padding: 30px;
-    margin: 25px;
-}
-.price p , dt
-{
-    text-align: center;
-}
-.plan
-{
-    display: flex;
-}
-.button1 {
-    background-color: #b47f1e;
-    color: white;
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-  }
-  .button1:hover {
-    background-color: #dc3d0de6;
-  }
-  .move
-  {
-    display: flex;
-    justify-content: center;
-  }
-  .price:hover
-  {
-    background-color:#2a626ae6;
-    color:white;
-  }
-
->>>>>>> 3d42d72 (updated)
   
