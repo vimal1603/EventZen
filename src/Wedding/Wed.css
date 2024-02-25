@@ -27,14 +27,13 @@
     font-size: 1.1em;
   }
   
-  h3 {
+  .h3 {
     font-size: 1.2em;
     line-height: 1.5;
     text-align: justify;
     color: aliceblue;
   }
-  
-  button.book-now-btn {
+ .book-now-btn {
     background-color: #657ea483;
     color: rgb(30, 26, 26);
     padding: 10px 20px;
@@ -44,13 +43,13 @@
     cursor: pointer;
   }
   
-  button.book-now-btn:hover {
+ .book-now-btn:hover {
     background-color: #8ed5fe;
   }
   .ima:hover{
     transform:scale(1.2);
   }
-  iframe{
+  .iframe{
     padding-right: 40px;
     padding-left: 40px;
     border-radius: 10px;

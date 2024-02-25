@@ -5,11 +5,14 @@ import './Cop.css';
 import BdaySlide from './Corprate';
 import { useNavigate } from 'react-router-dom';
 import Corporate from './Corprate';
+import Footer from '../Footer/Footer';
+import Book from '../Booking/Book';
+import { useState } from 'react';
 const Corp = () => {
-  const navigate=useNavigate();
+  const [book,setBook]=useState(false);
   const Click = () =>
   {
-    navigate('/book')
+      setBook(true)
   }
   return (
     <>
@@ -35,8 +38,15 @@ const Corp = () => {
           <br></br>
           <br></br>
           <button className="book" onClick={Click}>BOOK NOW</button>
+          {book &&
+          <div>
+            <Book/>
+            <br></br>
+            </div>
+          }
         </div>
       </center>
+      <Footer/>
     </>
   );
 }

@@ -1,5 +1,4 @@
 
-
   .birthdaybox
   {
     display: flex;
@@ -60,12 +59,12 @@
   
 
   
-  h3 {
+  .h3 {
     font-size: 1.2em;
     line-height: 1.5;
   }
   
-  button.book-now-btn {
+  .button2 {
     background-color: #2E3B4E;
     color: white;
     padding: 10px 20px;
@@ -75,7 +74,7 @@
     cursor: pointer;
   }
   
-  button.book-now-btn:hover {
+  .button2:hover {
     background-color: #384653;
   }
 

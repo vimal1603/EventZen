@@ -7,8 +7,23 @@ import NavSlide from './NavSlide'
 import img from "../Images/logO.png"
 import Birthday from '../Birthday/Birthday'
 import Home from '../Home/Home'
+import { useState } from 'react'
+import { useEffect } from 'react'
 const Nav = () => {
     const navigate=useNavigate();
+    const [username, setUsername] = useState('');
+  const [log, setLog] = useState(false);
+
+  useEffect(() => {
+    // Fetch values from localStorage when component mounts or when localStorage changes
+    setUsername(localStorage.getItem('username'));
+    setLog(localStorage.getItem('log'));
+  }, []); // Run this effect only once when component mounts
+
+  const Click=()=>
+  {
+    setLog(false);
+  }
   return (
     <div>
         
@@ -30,9 +45,16 @@ const Nav = () => {
             <li style={{paddingLeft:'30px'}}>
             <a href="/contactus" >CONTACTUS</a>
             </li>
+            {!log &&
             <li style={{paddingLeft:'30px'}}>
             <a href="/" >LOGIN</a>
             </li>
+            }
+            {log &&
+            <li style={{paddingLeft:'30px'}}>
+            <a href='' onClick={Click} >LOGOUT</a>
+            </li>
+            }
             
         
         <br></br>

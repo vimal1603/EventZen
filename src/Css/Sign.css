@@ -1,8 +1,7 @@
-
 .all{
     
     margin-left: 100px;
-    margin-top: 0px;
+    margin-top: -25px;
     
 }
 .im{
@@ -10,23 +9,27 @@
     border-width: 3px;
     border-color: aliceblue;
     border-right: 0px;
-    
+    margin-left: 155px;
+    margin-bottom: 1.5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    
 }
 .log{
     border-style: solid;
     border-width: 3px;
     border-left: 0px;
     border-color: aliceblue;
+   width: 400px;
     
+    margin-right: 200px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: auto;
     width:auto;
     background-image: url('../Images/bac.jpg');
     background-size: 1280px;
-    
+    box-shadow: 10px 10px 6 px;
 }
 .ty{
     color: aliceblue;
@@ -50,4 +53,13 @@
 Link{
     color: aliceblue;
 }
-
+.al{
+    margin-left: 10px;
+    text-decoration: underline;
+    color: rgb(74, 100, 252);
+}
+.ar{
+   text-decoration: underline;
+   color: rgb(64, 103, 244); 
+   margin-left: 70px;
+}

@@ -24,7 +24,7 @@ const Book = () => {
  }
   return (
     <div style={{color:'white'}}>
-        <h1>BOOK YOUR EVENTS
+        <h1 style={{textAlign:'center'}}>BOOK YOUR EVENTS
             </h1>
             <center>
             <div style={box}>

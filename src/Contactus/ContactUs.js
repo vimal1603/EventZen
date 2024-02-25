@@ -1,65 +1,62 @@
-
 import React, { useState } from 'react';
 import './ContactUs.css'; 
-import { useNavigate } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 const ContactUs = () => {
-  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
   const handleChange = (e) => {
-    
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
-    const navigate=useNavigate();
-    const alert1 = () =>
+
+    const alret = () =>
     {
-        alert("SUBMITED!!")
-        navigate('/h')
+        alert("WE WILL CONTACT YOU SOON....")
     }
-
-
-
   return (
-    <div>
-        <center>
-      <header class="header">
-        <h1>Contact Us</h1>
-      </header>
-      </center>
-
-      <section className="section">
-          <center>
+    <div className='contact'>
+      
+        <h1 style={{textAlign:'center',paddingTop:'40px'}}>Contact Us</h1>
+    <div className='body1'>
+      
+      <div className="section">
         <form>
-          <div className='input'>
           <label>
-            
-            <input type="text" name="name" placeholder='NAME' style={{color:'black'}} onChange={handleChange} required />
+            <b>Name:</b>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} required />
           </label>
 
           <label>
-            
-            <input type="email" name="email" placeholder='EMAIL' style={{color:'black'}} onChange={handleChange} required />
+            <b>Email:</b>
+            <input type="email" name="email" value={formData.email} onChange={handleChange} required />
           </label>
 
           <label>
-            
-            <input type="text" name="subject" placeholder='SUBJECT'style={{color:'black'}} onChange={handleChange} required />
+            <b>Subject:</b>
+            <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
           </label>
 
           <label>
-        
-            <input type="text" name="subject" style={{color:'black'}} placeholder='Type your requirements here' onChange={handleChange} required />
-
-            
+            <b>Message:</b>
+            <textarea required  name="message" value={formData.message} onChange={handleChange} />
           </label>
-          </div>
 <center>
-          <button className='button' onClick={alert1}>Submit</button>
+          <button className='button1' onClick={alret}>Submit</button>
           </center>
         </form>
-        </center>
-      </section>
+      </div>
+      </div>
+      <Footer/>
     </div>
   );
 }
 
 export default ContactUs;
-

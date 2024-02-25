@@ -17,14 +17,16 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<Nav/>}>
+    <Route path='/' element={<Nav username={localStorage.getItem('username')}
+                                            log={localStorage.getItem('log')}/>}>
         <Route index element={<SignInSide/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/wedding' element={<Wed/>}/>
         <Route path='/birthday' element={<Birthday/>}/>
         <Route path='/corporate' element={<Corp/>}/>
         <Route path='/book' element={<Book/>}/>
-        <Route path='/home' element={<WrappedComponent/>}/>
+        <Route path='/home' element={<Home username={localStorage.getItem('username')}
+                                            log={localStorage.getItem('log')}/>}/>
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>

@@ -4,11 +4,15 @@ import b from '../Images/wed1.jpg';
 import './Wed.css'
 import Wedding from './Wedding'
 import { useNavigate } from 'react-router-dom';
+import { FoodBank } from '@mui/icons-material';
+import Footer from '../Footer/Footer';
+import { useState } from 'react';
+import Book from '../Booking/Book';
 const Wed = () => {
-  const navigate=useNavigate();
+  const [book,setBook]=useState(false);
   const Click = () =>
   {
-    navigate('/book')
+      setBook(true)
   }
   return (
     <>
@@ -34,8 +38,15 @@ const Wed = () => {
           <br></br>
           <br></br>
           <button class="book" onClick={Click}>BOOK NOW</button>
+          {book &&
+          <div>
+            <Book/>
+            <br></br>
+            </div>
+          }
         </div>
       </center>
+      <Footer/>
     </>
   );
 }

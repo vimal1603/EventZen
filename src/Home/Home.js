@@ -1,23 +1,33 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import corp from '../Images/corp.jpg';
 import EventCard1 from './EventCard1';
 import '../Home/Home.css';
 import Footer from '../Footer/Footer';
 import SlideShow from './SlideShow';
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect } from 'react';
 const Home = () => {
+  const [username, setUsername] = useState('');
+  const [log, setLog] = useState(false);
+
+  useEffect(() => {
+    // Fetch values from localStorage when component mounts or when localStorage changes
+    setUsername(localStorage.getItem('username'));
+    setLog(localStorage.getItem('log'));
+  }, []); // Run this effect only once when component mounts
+
   const navigate=useNavigate();
   const Click = () =>
   {
     navigate('/signup')
   }
   return (
+    <div>
     <div className="container">
       <div>
         <center>
-          <h1 style={{color:'white'}}>Welcome to EventZen</h1>
+          <h1 style={{color:'white'}}>Welcome to EventZen  {log &&<div> , {username} </div>}</h1>
           <br />
           <SlideShow />
           <br />
@@ -55,6 +65,8 @@ const Home = () => {
         
       </div>
     </div>
+      <Footer/>
+      </div>
   )
 }
 

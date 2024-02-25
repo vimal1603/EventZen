@@ -5,11 +5,13 @@ import './Birthday.css'; // Import the CSS file
 import BdaySlide from './BdaySlide';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
+import Book from '../Booking/Book';
 const Birthday = () => {
-  const navigate=useNavigate();
+  const [book,setBook]=useState(false);
   const Click = () =>
   {
-      navigate('/book')
+      setBook(true)
   }
   return (
     <>
@@ -37,14 +39,20 @@ const Birthday = () => {
           <br></br>
           <center>
           
-          </center>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
           <button className="book" onClick={Click}>BOOK NOW</button>
+          </center>
+          {book &&
+          <div>
+            <Book/>
+            <br></br>
+            </div>
+          }
         </div>
-      
+        <Footer/>
     </>
   );
 }

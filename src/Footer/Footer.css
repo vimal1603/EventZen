@@ -1,0 +1,60 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex-basis: calc(33% - 80px);
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  .footer-sectionn {
+    flex-basis: calc(33% - 80px);
+    margin-bottom: 20px;
+    margin-left: 190px;
+  }
+  .footer-sectionnn {
+    flex-basis: calc(33% - 80px);
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0px;;
+  } 
+  /* Add these styles to your Footer.css file */
+
+.social-icons {
+    display: flex;
+    gap: 20px; /* Adjust the gap between social icons */
+    margin-top: 30px; /* Adjust the margin at the top of the social icons */
+    margin-left: 0px; /* Adjust the margin at the top of the social icons */
+  }
+  
+  .social-icons a {
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 40px; /* Adjust the width of the social icons */
+    height: 40px; /* Adjust the height of the social icons */
+    border-radius: 20%; /* Optional: Add border-radius for rounded icons */
+  }
+  
