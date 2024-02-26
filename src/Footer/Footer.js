@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <h3>EVENTZEN</h3>
-                    <p>V3 Events and Entertainments Pvt Ltd is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the world. As the leading wedding designers and event organisers in Delhi and Gurgaon, we are renowned to create authentic experiences worth cherishing for a lifetime.</p>
+                    <p>EventZen is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the world. As the leading wedding designers and event organisers in Delhi and Gurgaon, we are renowned to create authentic experiences worth cherishing for a lifetime.</p>
                 </div>
 
                 <div className="footer-sectionn">

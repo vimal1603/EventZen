@@ -13,16 +13,20 @@
     margin-bottom: 1.5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    margin-bottom: 50px;
     
 }
 .log{
+    color: aliceblue;
     border-style: solid;
     border-width: 3px;
-    border-left: 0px;
+    border-left: 50px;
+    margin-bottom: 50px;
     border-color: aliceblue;
    width: 400px;
-    
+    padding-left: 50px;
     margin-right: 200px;
+    padding-right: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: auto;
@@ -41,6 +45,7 @@
     background-color: rgba(240, 248, 255, 0.436);
 }
 .img{
+    margin-left: 50px;
     border-radius: 50%;
 }
 .ch{

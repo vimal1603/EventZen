@@ -1,6 +1,7 @@
 
 import React from 'react'
 import "../Pricing/Pricing.css"
+import Footer from '../Footer/Footer'
 const Pricing = () => {
   const bold = 
   {
@@ -110,6 +111,7 @@ const Pricing = () => {
     </div>
 
     </div>
+    <Footer/>
     </div>
   )
 }

@@ -3,7 +3,7 @@
 body{
   background-image: url("./Images/event1.png");
   background-size: cover;
-
+  background-attachment: fixed;
   
 
 }

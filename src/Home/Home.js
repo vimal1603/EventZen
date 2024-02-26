@@ -12,10 +12,10 @@ const Home = () => {
   const [log, setLog] = useState(false);
 
   useEffect(() => {
-    // Fetch values from localStorage when component mounts or when localStorage changes
+   
     setUsername(localStorage.getItem('username'));
     setLog(localStorage.getItem('log'));
-  }, []); // Run this effect only once when component mounts
+  }, []); 
 
   const navigate=useNavigate();
   const Click = () =>
@@ -27,7 +27,7 @@ const Home = () => {
     <div className="container">
       <div>
         <center>
-          <h1 style={{color:'white'}}>Welcome to EventZen  {log &&<div> , {username} </div>}</h1>
+          <h1 style={{color:'white'}}>Welcome to EventZen  </h1>
           <br />
           <SlideShow />
           <br />

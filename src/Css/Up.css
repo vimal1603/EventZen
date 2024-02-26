@@ -9,9 +9,11 @@
     height: auto;
     width:auto;
     background-image: url('../Images/bac.jpg');
-    background-size: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     box-shadow: 10px 10px 6px rgba(155, 151, 151, 0.674);
-    
+    color: aliceblue;
 }
 .vi{
     background-color: rgba(255, 255, 255, 0.437);  
@@ -20,22 +22,24 @@ h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .in{
-    height: 30px;
-    width : 300px;
-    margin-left: 60px;
+    height: 40px;
+    width : 140px;
+    margin-right: 10px;
     border-radius: 5px;
     background-color: rgba(243, 243, 246, 0.545);
     color: black;
     border: none;
 }
 .ina{
-    height: 30px;
+    height: 40px;
     width: 298px;
-    margin-left: 60px;
+    margin-left: -8px;
     border-radius: 5px;
     background-color: rgba(243, 243, 246, 0.545);
     color: black;
     border: none;
+
+
 }
 .cb{
     margin-left: 20px;
@@ -47,7 +51,7 @@ h2{
 .la{
    font-size: 13px;
    text-align:left;
-   color: aliceblue;
+   
 }
 .hr{
     margin-left: 150px;
@@ -66,10 +70,8 @@ h2{
 }
 .but{
     height: 30px;
-    width: 200px;
+    width: 298px;
     border-radius: 5px;
-    text-align: center;
-    margin-left: 140px;
     background-color: rgba(25, 105, 243, 0.951);
     border: none;
 }

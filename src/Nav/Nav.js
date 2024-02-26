@@ -9,6 +9,7 @@ import Birthday from '../Birthday/Birthday'
 import Home from '../Home/Home'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Drop from "../Drop/Drop"
 const Nav = () => {
     const navigate=useNavigate();
     const [username, setUsername] = useState('');
@@ -33,7 +34,7 @@ const Nav = () => {
             <li>
                 <a href='/home'><img src={img} height={50} width={50} style={{borderRadius:'50%'}}></img></a>
             </li>
-            <li style={{paddingLeft:'60vw',paddingTop:'0px'}}>
+            <li style={{paddingLeft:'55vw',paddingTop:'0px'}}>
             <NavSlide/>
             </li>
             <li style={{paddingLeft:'30px'}}>
@@ -45,6 +46,9 @@ const Nav = () => {
             <li style={{paddingLeft:'30px'}}>
             <a href="/contactus" >CONTACTUS</a>
             </li>
+            <li style={{paddingLeft:'30px'}}>
+            <a href="/signup" >SIGNUP</a>
+            </li>
             {!log &&
             <li style={{paddingLeft:'30px'}}>
             <a href="/" >LOGIN</a>
@@ -52,7 +56,7 @@ const Nav = () => {
             }
             {log &&
             <li style={{paddingLeft:'30px'}}>
-            <a href='' onClick={Click} >LOGOUT</a>
+              <Drop/>
             </li>
             }
             

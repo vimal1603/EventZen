@@ -13,6 +13,7 @@ import ContactUs from './Contactus/ContactUs';
 import Wed from './Wedding/Wed'
 import WrappedComponent from './UseContext/WrappedComponent';
 import Pricing from './Pricing/Pricing';
+import Drop from './Drop/Drop';
 function App() {
   return (
     <BrowserRouter>
@@ -30,6 +31,8 @@ function App() {
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='/drop' element={<Drop username={localStorage.getItem('username')}
+                                            log={localStorage.getItem('log')}/>}/>
         </Route>
     </Routes>
     </BrowserRouter>
