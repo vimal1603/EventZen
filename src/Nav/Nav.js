@@ -20,17 +20,10 @@ const Nav = () => {
     setUsername(localStorage.getItem('username'));
     setLog(localStorage.getItem('log'));
   }, []); // Run this effect only once when component mounts
-
-  const Click=()=>
-  {
-    setLog(false);
-  }
   return (
     <div>
         
         <ul style={{listStyle:'none',display:'flex',color:'white',paddingBottom:'30px'}}>
-            
-          
             <li>
                 <a href='/home'><img src={img} height={50} width={50} style={{borderRadius:'50%'}}></img></a>
             </li>
@@ -46,19 +39,16 @@ const Nav = () => {
             <li style={{paddingLeft:'30px'}}>
             <a href="/contactus" >CONTACTUS</a>
             </li>
-            <li style={{paddingLeft:'30px'}}>
-            <a href="/signup" >SIGNUP</a>
-            </li>
-            {!log &&
+            {!log && 
             <li style={{paddingLeft:'30px'}}>
             <a href="/" >LOGIN</a>
             </li>
             }
-            {log &&
+           
             <li style={{paddingLeft:'30px'}}>
               <Drop/>
             </li>
-            }
+            
             
         
         <br></br>

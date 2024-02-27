@@ -26,7 +26,7 @@ export default function EventCard1() {
   }
   return (
     <div class="ab">
-      <span>
+      <span style={{paddingLeft:'10px'}}>
       <Card sx={{
         maxWidth: 345,
         minWidth: 275,

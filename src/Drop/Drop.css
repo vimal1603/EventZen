@@ -114,6 +114,10 @@
     transition: var(--speed) ease;
   }
   
+  .dr button
+  {
+    color:'white';
+  }
   
   h3{
     width: 100%;

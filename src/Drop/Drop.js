@@ -17,11 +17,13 @@ function Drop() {
 
   const [username, setUsername] = useState('');
   const [log, setLog] = useState(false);
+  const [nav, setNav] = useState(true);
   const navigate=useNavigate();
   const Click = () =>
   {
     setLog(false);
     setUsername("");
+    setNav(false);
     navigate('/')
   }
 
@@ -60,14 +62,18 @@ function Drop() {
 
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
          {log && <h3 style={{color:'white'}}>{username}<br/></h3>}
-          <ul>
-            <DropdownItem img = {user} text = {"My Profile"}/>
-            <DropdownItem img = {edit} text = {"Edit Profile"}/>
-            
+          <ul class='dr'>
+            <li style={{display:'flex'}}>
+              <img height={40} width={40}src={user}></img>
+              <a href='' style={{paddingLeft:'20px'}}>My Profile</a>
+            </li>
+            <DropdownItem img = {edit} text = {"Edit Profile"}/>  
             <DropdownItem img = {settings} text = {"Settings"}/>
             <DropdownItem img = {help} text = {"Helps"}/>
-            <DropdownItem  img={logout} text = {"Logout"} ></DropdownItem>
-            
+            <li style={{display:'flex'}}>
+              <img height={40} width={40}src={logout}></img>
+              <button onClick={Click} style={{paddingLeft:'20px',background:'none',border:'none',color:'white'}}>Logout</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,7 +86,7 @@ function DropdownItem(props){
   return(
     <li className = 'dropdownItem'>
       <img src={props.img}></img>
-      <a href='/'> {props.text} </a>
+      <a> {props.text} </a>
     </li>
   );
 }

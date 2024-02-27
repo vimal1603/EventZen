@@ -61,6 +61,8 @@ const Home = () => {
            
           </span>
         </div>
+        <br></br>
+        <br></br>
         </center>
         
       </div>
