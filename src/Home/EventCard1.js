@@ -25,8 +25,8 @@ export default function EventCard1() {
     navigate('/corporate')
   }
   return (
-    <div class="ab">
-      <span style={{paddingLeft:'10px'}}>
+    <div style={{display:'flex'}}>
+      <span style={{paddingLeft:'9vw'}}>
       <Card sx={{
         maxWidth: 345,
         minWidth: 275,
@@ -45,7 +45,7 @@ export default function EventCard1() {
 
             alt="green iguana"
           />
-          <CardContent>
+          <CardContent class='content'>
             <Typography gutterBottom variant="h5" component="div" color={'black'}>
               Weddings
             </Typography>
@@ -73,7 +73,7 @@ export default function EventCard1() {
               image={birth}
               alt="green iguana"
             />
-            <CardContent>
+            <CardContent class='content'>
               <Typography gutterBottom variant="h5" component="div" color={'black'}>
                 Birthdays
               </Typography>
@@ -104,7 +104,7 @@ export default function EventCard1() {
               alt="green iguana"
             />
 
-            <CardContent>
+            <CardContent class='content'>
               <Typography gutterBottom variant="h5" component="div" color={'black'}>
                 Corporate Events
               </Typography>
@@ -119,39 +119,6 @@ export default function EventCard1() {
         </Card>
       </span>
 
-      <span>
-        <Card sx={{
-          maxWidth: 345,
-          minWidth: 275,
-          transition: 'transform 0.2s',
-          '&:hover': {
-            transform: 'scale(1.05)',
-          },
-        }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={inperson}
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div" color={'black'}>
-                In Person Events
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Elevating events, exceeding expectations. Creating unforgettable moments,
-                one event at a time
-                <br></br>
-                <br></br>
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <Outlet />
-        </Card>
-      </span>
-      <br></br>
-      <br></br>
     </div>
   );
 }  

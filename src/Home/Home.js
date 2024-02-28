@@ -55,6 +55,7 @@ const Home = () => {
           <button onClick={Click}className='button'>Get Started</button>
           <br></br>
           <br></br>
+          <h1 style={{color:'white'}}>Our Services</h1>
         <div className="ab">
           <span >
             <EventCard1 />
