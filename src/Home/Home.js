@@ -60,7 +60,6 @@ const Home = () => {
         <div className="ab">
           <span >
             <EventCard1 />
-           
           </span>
         </div>
         <br></br>
