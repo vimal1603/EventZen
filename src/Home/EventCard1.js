@@ -25,17 +25,16 @@ export default function EventCard1() {
     navigate('/corporate')
   }
   return (
-    <div style={{display:'flex'}}>
-      <span style={{paddingLeft:'9vw'}}>
+    <div class='' style={{display:'flex'}}>
+      <span style={{paddingLeft:'4vw'}}>
       <Card sx={{
         maxWidth: 345,
         minWidth: 275,
-
+        height: 300,
         transition: 'transform 0.2s',
         '&:hover': {
           transform: 'scale(1.05)',
         },
-
       }} onClick={Clickwed}>
         <CardActionArea>
           <CardMedia
@@ -61,6 +60,7 @@ export default function EventCard1() {
         <Card sx={{
           maxWidth: 345,
           minWidth: 275,
+          height: 300,
           transition: 'transform 0.2s',
           '&:hover': {
             transform: 'scale(1.05)',
@@ -91,6 +91,7 @@ export default function EventCard1() {
         <Card sx={{
           maxWidth: 345,
           minWidth: 275,
+          height: 300,
           transition: 'transform 0.2s',
           '&:hover': {
             transform: 'scale(1.05)',

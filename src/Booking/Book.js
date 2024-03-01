@@ -1,14 +1,20 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import '../Booking/Book.css'
 import { useNavigate } from 'react-router-dom'
-import Date from './Date'
+
 const Book = () => {
     const navigate=useNavigate();
+    const [eventDate,setEventDate]=useState('');
     const Click=()=>
     {
+        localStorage.setItem('eventDate', eventDate);
         alert("Our Team will Contact you Shortly")
-        navigate('/h');
+        navigate('/home');
+    }
+    const handleDate = (e) =>
+    {
+        setEventDate(e.target.value);
     }
     const box =
     {
@@ -42,21 +48,19 @@ const Book = () => {
                 <br></br>
                 <input placeholder='No.of.attendees(approx)'></input>
                 <br></br>
-                
                 <br></br>
-                <span style={{paddingLeft:'80px'}}>
-               <Date/>
-               </span>
+               <input type='date' onChange={handleDate} value={eventDate}></input>
                <br></br>
                <br></br>
                 <input placeholder='Describe your Event' ></input>
                 </div>
-                <br></br>
-                <br></br>
-                <button style={{paddingLeft:'30px'}}className='button' onClick={Click}>SUBMIT</button>
             </form>
-           
             </div>
+            <br></br>
+            <br></br>
+                <button style={{paddingLeft:'30px'}}className='button2' onClick={Click}>SUBMIT</button>
+           <br></br>
+           <br></br>
             </center>
         </div>
   )

@@ -13,6 +13,7 @@ import Grid from '@mui/material/Grid';
 import b1 from '../Images/bday1.jpg';
 import b2 from '../Images/bday2.jpg';
 import b3 from '../Images/bday3.jpg';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,

@@ -1,8 +1,5 @@
 
-/* * {
-    background-color:mintcream;
-  } */
-  
+
   .image-container {
     width: 100%;
     overflow: hidden;
@@ -10,13 +7,13 @@
   
   .image-container img {
     width: 80%;
-    margin-left: 150px;
+    margin-left: 25%;
     
   }
   
   .content-container {
     
-    background-color:rgba(128, 128, 128, 0.375);
+    
     margin: 2cm 5cm;
     padding: 20px;
     border-radius: 10px;
@@ -30,11 +27,13 @@
     font-size: 1.1em;
   }
   
-  h3 {
-    font-size: 1.2em;
-    line-height: 1.5;
-    text-align: justify;
-    color: aliceblue;
+  .h32 {
+    color: whitesmoke;
+    height: 40vh;
+    
+    width:80vw;
+    background-color: #0c6bd600;
+    line-height: 30px;
   }
   
   .book{
@@ -51,8 +50,8 @@
     background-color: #0ecdebdf;
   }
   .ima:hover{
-    transform:scale(1.06);
-    transition: '0.2s';
+    transform:scale(0.9);
+    transition: '0.3s';
   }
   iframe{
     padding-right: 40px;

@@ -9,6 +9,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: white;
   }
   
   .footer-section {

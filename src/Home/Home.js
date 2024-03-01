@@ -35,6 +35,7 @@ const Home = () => {
           <h1 style={{ color: 'white' }}>Transforming Your Vision into Unforgettable Moments. <br /> Where Every Celebration Finds Perfect Harmony</h1>
           <br />
           <br />
+          
           <div style={{backgroundColor:"rgba(4,37,93)" }}>
             <br></br>
             <p style={{fontSize:'30px',color:'white',textAlign:'center'}}>End-to-end event planning</p>
@@ -52,7 +53,7 @@ const Home = () => {
           <br></br>
           <p style={{textAlign:'center',color:'whitesmoke',fontSize:30}}>Ready to manage your events smarter, better?
           </p>
-          <button onClick={Click}className='button'>Get Started</button>
+          <button onClick={Click}className='button3'>Get Started</button>
           <br></br>
           <br></br>
           <h1 style={{color:'white'}}>Our Services</h1>

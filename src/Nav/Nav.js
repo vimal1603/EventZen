@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import bg from '../Images/event.png'
 import { Outlet, useNavigate } from 'react-router-dom'
 import '../Nav/Nav.css'
@@ -12,14 +12,9 @@ import { useEffect } from 'react'
 import Drop from "../Drop/Drop"
 const Nav = () => {
     const navigate=useNavigate();
-    const [username, setUsername] = useState('');
-  const [log, setLog] = useState(false);
+    
 
-  useEffect(() => {
-    // Fetch values from localStorage when component mounts or when localStorage changes
-    setUsername(localStorage.getItem('username'));
-    setLog(localStorage.getItem('log'));
-  }, []); // Run this effect only once when component mounts
+   
   return (
     <div>
         
@@ -39,16 +34,17 @@ const Nav = () => {
             <li style={{paddingLeft:'30px'}}>
             <a href="/contactus" >CONTACTUS</a>
             </li>
-            {!log && 
+            
+           
+            
+           
             <li style={{paddingLeft:'30px'}}>
             <a href="/" >LOGIN</a>
             </li>
-            }
-           
-            <li style={{paddingLeft:'30px'}}>
-              <Drop/>
-            </li>
             
+            <li style={{paddingLeft:'30px'}}>
+              LOGOUT
+            </li>
             
         
         <br></br>

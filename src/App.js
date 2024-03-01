@@ -14,25 +14,27 @@ import Wed from './Wedding/Wed'
 import WrappedComponent from './UseContext/WrappedComponent';
 import Pricing from './Pricing/Pricing';
 import Drop from './Drop/Drop';
+import InvitationCard from './InvitationCard/InvitationCard';
+import InvitationDesigner from "./Birthday/InvitationDesigner"
 function App() {
+
   return (
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<Nav username={localStorage.getItem('username')}
-                                            log={localStorage.getItem('log')}/>}>
+    <Route path='/' element={<Nav loggedin={localStorage.getItem('loggedin')}/>}>
         <Route index element={<SignInSide/>}/>
         <Route path='/signup' element={<SignUp/>}/>
-        <Route path='/wedding' element={<Wed/>}/>
+        <Route path='/wedding' element={<Wed />}/>
         <Route path='/birthday' element={<Birthday/>}/>
         <Route path='/corporate' element={<Corp/>}/>
-        <Route path='/book' element={<Book/>}/>
-        <Route path='/home' element={<Home username={localStorage.getItem('username')}
-                                            log={localStorage.getItem('log')}/>}/>
+        <Route path='/book' element={<Book />}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
-        <Route path='/drop' element={<Drop username={localStorage.getItem('username')}
-                                            log={localStorage.getItem('log')}/>}/>
+        <Route path='/drop' element={<Drop />}/>
+        <Route path="/invitation" element={<InvitationCard eventDate={localStorage.getItem('eventDate')}/>}/>
+        <Route path="/birthinvite" element={<InvitationDesigner/>}/>
         </Route>
     </Routes>
     </BrowserRouter>

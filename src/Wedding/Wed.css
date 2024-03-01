@@ -1,19 +1,15 @@
 
-.image-container {
-    width: 100%;
+.image-containerw {
+    
     overflow: hidden;
     align-items: center;
   }
   
-  .image-container img {
-    width: 80%;
+  .image-containerw img {
+    
     align-items: center;
-    margin-left: 150px;
-    
-  }
-  
-  .content-container {
-    
+  }  
+  .content-containerw {
     background-color:rgba(128, 128, 128, 0.375);
     margin: 2cm 5cm;
     padding: 20px;
@@ -22,12 +18,10 @@
     text-align: center;
     color: #4A4A4A;
   }
-  
   .event-info {
     margin-bottom: 20px;
     font-size: 1.1em;
   }
-  
   .h3 {
     font-size: 1.2em;
     line-height: 1.5;
@@ -43,7 +37,6 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
  .book-now-btn:hover {
     background-color: #8ed5fe;
   }
@@ -54,5 +47,36 @@
     padding-right: 40px;
     padding-left: 40px;
     border-radius: 10px;
-
   }
+  .h31
+  {
+    color: whitesmoke;
+    height: auto;
+    justify-content: center;
+    width:80vw;
+    background-color: #0c76f000;
+    line-height: 25px;
+  }
+  .testimonials {
+    margin-top: 50px;
+  }
+  .featured
+  {
+    display: flex;
+  }
+  .featured li{
+    list-style-type: none;
+    font-size:large;
+  }
+  .box1
+  {
+    background-color:wheat;
+    padding: auto;
+    border: 3px solid whitesmoke;
+    width: 20vw;
+    margin: 50px;
+}
+.box1 img
+{
+  padding: 0px;
+}

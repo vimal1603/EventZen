@@ -1,0 +1,52 @@
+.invite
+{
+    margin-left: 40%;
+    border-color: wheat;
+    border: 5px solid wheat;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.greeting
+{
+    text-align: center;
+    
+}
+.greeting input
+{
+    width:10vw;
+    
+}
+.card1
+{
+    background-image: url("../Images/w5.jpg");
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    border-color: wheat;
+    border: 2px solid wheat;
+    width: 40vw;
+    height: 100vh;
+    color:rgba(80, 5, 13, 0.982);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+.card1 p{
+    padding-left: 20vh;
+}
+.card2
+{
+    background-image: url("../Images/w6.jpg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    border-color: wheat;
+    border: 2px solid wheat;
+    width: 45vw;
+    height: 140vh;
+    color:rgba(67, 4, 12, 0.982);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+}

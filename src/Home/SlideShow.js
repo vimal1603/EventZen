@@ -6,7 +6,7 @@ import a3 from "../Images/a2.jpg"
 import a4 from "../Images/a3.jpg"
 import a5 from "../Images/a5.webp"
 const SlideShow = () => {
-    const interval=2000;
+    const interval=3500;
     const images=[a1,a2,a3,a4,a5];
   const [currentIndex, setCurrentIndex] = useState(0);
 

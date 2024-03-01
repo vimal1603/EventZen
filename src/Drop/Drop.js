@@ -11,27 +11,27 @@ import "./Drop.css";
 import React, {useState, useEffect, useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Drop() {
+function Drop({log}) {
 
   const [open, setOpen] = useState(false);
 
   const [username, setUsername] = useState('');
-  const [log, setLog] = useState(false);
+  const [log1, setLog1] = useState("true");
   const [nav, setNav] = useState(true);
   const navigate=useNavigate();
   const Click = () =>
   {
-    setLog(false);
-    setUsername("");
-    setNav(false);
-    navigate('/')
+    setLog1("false");
+    localStorage.setItem('log1',log1);
+    localStorage.setItem('log',log1);
+    navigate('/');
   }
-
-  useEffect(() => {
-   
-    setUsername(localStorage.getItem('username'));
-    setLog(localStorage.getItem('log'));
-  }, []); 
+if(log == "true")
+{
+  setLog1("true");
+  localStorage.setItem('log1',log1);
+}
+ 
 
   let menuRef = useRef();
 
@@ -61,7 +61,7 @@ function Drop() {
         </div>
 
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
-         {log && <h3 style={{color:'white'}}>{username}<br/></h3>}
+         {log1 && <h3 style={{color:'white'}}>{username}<br/></h3>}
           <ul class='dr'>
             <li style={{display:'flex'}}>
               <img height={40} width={40}src={user}></img>
