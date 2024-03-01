@@ -28,10 +28,10 @@ const Home = () => {
       <div>
         <center>
           <h1 style={{color:'white'}}>Welcome to EventZen  </h1>
-          <br />
+          <br/>
           <SlideShow />
-          <br />
-          <br />
+          <br/>
+          <br/>
           <h1 style={{ color: 'white' }}>Transforming Your Vision into Unforgettable Moments. <br /> Where Every Celebration Finds Perfect Harmony</h1>
           <br />
           <br />
