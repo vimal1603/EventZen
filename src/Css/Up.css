@@ -79,3 +79,10 @@ input:hover{
     transform: scale(1.05);
     transition: 0.2s;
 }
+.switch
+{
+    background: none;
+    border: none;
+    color: aliceblue;
+    padding-left: 7vw;
+}

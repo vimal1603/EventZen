@@ -86,7 +86,7 @@
     background-color: #2E3B4E;
     border-radius: var(--border-radius);
     padding: 10px 20px;
-    width: 300px;
+    width: 200px;
   }
   
   .dropdown-menu::before{
@@ -159,13 +159,13 @@
   
   .dropdownItem img{
     max-width: 40px;
-    margin-right: 10px;
+    
     opacity: 0.5;
     transition: var(--speed);
   }
   
   .dropdownItem a{
     max-width: 100px;
-    margin-left: 10px;
+    
     transition: var(--speed);
   }

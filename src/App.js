@@ -21,14 +21,13 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<Nav loggedin={localStorage.getItem('loggedin')}/>}>
-        <Route index element={<SignInSide/>}/>
+    <Route path='/' element={<Nav logg={localStorage.getItem('logg')}/>}>
+        <Route index element={<Home/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/wedding' element={<Wed />}/>
         <Route path='/birthday' element={<Birthday/>}/>
         <Route path='/corporate' element={<Corp/>}/>
         <Route path='/book' element={<Book />}/>
-        <Route path='/home' element={<Home/>}/>
         <Route path='/pricing' element={<Pricing/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>

@@ -11,7 +11,7 @@ import "./Drop.css";
 import React, {useState, useEffect, useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Drop({log}) {
+function Drop() {
 
   const [open, setOpen] = useState(false);
 
@@ -26,11 +26,7 @@ function Drop({log}) {
     localStorage.setItem('log',log1);
     navigate('/');
   }
-if(log == "true")
-{
-  setLog1("true");
-  localStorage.setItem('log1',log1);
-}
+
  
 
   let menuRef = useRef();
@@ -67,9 +63,9 @@ if(log == "true")
               <img height={40} width={40}src={user}></img>
               <a href='' style={{paddingLeft:'20px'}}>My Profile</a>
             </li>
-            <DropdownItem img = {edit} text = {"Edit Profile"}/>  
+            {/* <DropdownItem img = {edit} text = {"Edit Profile"}/>  
             <DropdownItem img = {settings} text = {"Settings"}/>
-            <DropdownItem img = {help} text = {"Helps"}/>
+            <DropdownItem img = {help} text = {"Helps"}/> */}
             <li style={{display:'flex'}}>
               <img height={40} width={40}src={logout}></img>
               <button onClick={Click} style={{paddingLeft:'20px',background:'none',border:'none',color:'white'}}>Logout</button>

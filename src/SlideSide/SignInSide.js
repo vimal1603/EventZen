@@ -4,22 +4,32 @@ import img2 from '../Images/back.jpg'
 import img1 from '../Images/logO.png'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import MyContext from '../UseContext/MyContext'
+import axios from 'axios';
 const SignInSide = () => {
+  const[sign,setSign]=useState(false);
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
+  const [logg,setLogg]=useState("logout")
+  const [name,setName]=useState("");
   const navigate=useNavigate();
   const Click=()=>
   { 
-    
- 
-    navigate('/home')
+      setLogg("login");
+      localStorage.setItem('logg', 'login'); // Update local storage with the new value
+      navigate('/home');
   }
   const Change = (e) =>
   {
     setUser(e.target.value);
   }
+  axios.get("https://jsonplaceholder.typicode.com/users")
+    .then(response =>
+    {
+      setName(response.data[9].id);
+    console.log("----->>>>>response",name)
+    }) 
   return (
+    
     <div>
       <div style={{display:'flex'}}>
       <img className='im'src={img2} height={620}width={700}></img>
