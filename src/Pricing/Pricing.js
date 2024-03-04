@@ -2,12 +2,35 @@
 import React from 'react'
 import "../Pricing/Pricing.css"
 import Footer from '../Footer/Footer'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useState } from 'react'
 const Pricing = () => {
+  const navigate = useNavigate();
   const bold = 
   {
     fontWeight:'bold',
     fontSize:30
   }
+  const Click = () =>
+  {
+    navigate('/contactus');
+  }
+  const Click1 = () =>
+  {
+    if(l1 === "login")
+    {
+    navigate('/contactus');
+    }
+    else
+    {
+      navigate('/signup')
+    }
+  }
+  const [l1, setL1] = useState(localStorage.getItem("logg") || "logout");
+  useEffect(() => {
+    setL1(localStorage.getItem("logg") || "logout");
+  }, []); 
   return (
     <div>
       <p style={{backgroundColor:'royalblue' ,color:'white',padding:'50px',fontSize:20}}>"At EventZen, we understand that every event is unique, which is why we offer a diverse range of packages and customizable event tech and production services. Whether you're planning a wedding, corporate event, or virtual conference, our flexible solutions ensure you get exactly what you need. Our offerings include everything from event apps and virtual platforms to registration, website, and ticketing services. We believe in providing tailored recommendations based on your requirements and preferences. Simply fill out our pricing form, and our experienced team will guide you through our range of options, helping you create the perfect event experience."</p>
@@ -37,7 +60,7 @@ const Pricing = () => {
       </dl>
       <br></br>
       <div class='move'>
-      <button class='button1'>GET STARTED</button>
+      <button class='button1' onClick={Click1}>GET STARTED</button>
       </div>
       </span>
     </div>
@@ -61,7 +84,7 @@ const Pricing = () => {
         </dd>
       </dl>
       <div class='move'>
-      <button class='button1' >GET STARTED</button>
+      <button class='button1' onClick={Click1}>GET STARTED</button>
       </div>
       </span>
     </div>
@@ -83,7 +106,7 @@ const Pricing = () => {
         </dd>
       </dl>
       <div class='move'>
-      <button class='button1'>TALK TO US</button>
+      <button class='button1' onClick={Click}>TALK TO US</button>
       </div>
     </div>
 
@@ -105,7 +128,7 @@ const Pricing = () => {
         </dd>
       </dl>
       <div class='move'>
-      <button class='button1'>TALK TO US</button>
+      <button class='button1' onClick={Click}>TALK TO US</button>
       </div>
       </span>
     </div>

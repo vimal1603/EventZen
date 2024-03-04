@@ -73,7 +73,7 @@ const SignUp = () => {
         } else {
           console.log("User not found");
           setError('Invalid username or password');
-          alert(error);
+          alert(error || "Invalid credentials");
         }
       })
       .catch(error => {
