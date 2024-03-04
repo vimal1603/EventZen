@@ -21,9 +21,9 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<Nav logg={localStorage.getItem('logg')}/>}>
-        <Route index element={<Home/>}/>
-        <Route path='/signup' element={<SignUp/>}/>
+    <Route path='/signup' element={<SignUp/>}/>
+    <Route path='/' element={<Nav logg={localStorage.getItem('logg')} name={localStorage.getItem('name')}/>}>
+        <Route index element={<Home logg={localStorage.getItem('logg')}/>}/>
         <Route path='/wedding' element={<Wed />}/>
         <Route path='/birthday' element={<Birthday/>}/>
         <Route path='/corporate' element={<Corp/>}/>

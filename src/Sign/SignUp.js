@@ -21,6 +21,7 @@ const SignUp = () => {
   const [password1, setPassword1] = useState('');
   const [error, setError] = useState('');
   const [postedData, setPostedData] = useState([]);
+  const [logg,setLogg]=useState("logout")
    
   const Click = () =>
   {
@@ -58,18 +59,21 @@ const SignUp = () => {
   const fetchUserData = () => {
     axios.get("https://jsonplaceholder.typicode.com/users")
       .then(response => {
-        
         const userData = response.data;
         const user = userData.find(user => user.username === username ||  postedData.username1 === username);
         if (user) {
           
           console.log("User found:", user);
           setError('');
-          navigate('/home')
+          setLogg("login");
+          localStorage.setItem('logg', 'login');
+          localStorage.setItem('username', username);
+          navigate('/')
           
         } else {
           console.log("User not found");
           setError('Invalid username or password');
+          alert(error);
         }
       })
       .catch(error => {
@@ -84,7 +88,11 @@ const SignUp = () => {
   }
   return (
     <div>
-    {!sign &&
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    {!sign && 
     <div><form onSubmit={Click} className='sig'><br></br>
       <center><img src={img1} alt='loading'height={90} width={90} style={{borderRadius:'50%'}}></img><br></br>
       <h2>Sign Up</h2>
@@ -93,13 +101,13 @@ const SignUp = () => {
           <input className='ina' type='text' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} required></input><br></br><br></br>
           <input className='ina' type='text' placeholder='Username' value={username1} onChange={e => setUsername1(e.target.value)} required></input><br></br><br></br>
           <input className='ina' type='password' placeholder='Password' value={password1} onChange={e => setPassword1(e.target.value)} required></input><br></br><br></br>
-          <input className='cb' type="checkbox"></input>
+          <input className='cb' type="checkbox" required></input>
           <lable className='la'>I want to  receive inspiration, marketing promotions<br></br>and updates via email </lable><br></br><br></br>
           <img className='lo' src={ins} alt='loading' height={30} width={30} style={{ borderRadius: '50%' }}></img>
           <img className='lo' src={x} alt='loading' height={30} width={30} style={{ borderRadius: '50%' }}></img>
           <img className='lo' src={go} alt='loading' height={30} width={30} style={{ borderRadius: '50%' }}></img><br></br><br></br>
           <button className='but' type='submit'>Sign Up</button><br></br><br></br>
-          <button className='switch' onClick={Click2}>Already have an Account ?</button><br></br><br></br>
+          <button className='switch' onClick={Click2}>Already have an Account ? </button><br></br><br></br>
       </center>
       </form>
       </div>
@@ -107,14 +115,14 @@ const SignUp = () => {
     {sign &&
       <div>
       <div style={{display:'flex'}}>
-      <img className='im'src={img2} height={620}width={700}></img>
+      <img className='im'src={img2} height={550}width={600} ></img>
       <form onSubmit={handleLogin}className='log'><br></br>
       <img src={img1} alt='loading'height={90} width={90} style={{borderRadius:'50%'}}></img><br></br>
       <center><h1 style={{color:'white'}}>Sign In</h1></center>
     <input className='ina' type='text' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)}></input><br></br>
     <br></br>
     <input required className='ina' type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} ></input><br></br><br></br>
-    <input className='cb' type="checkbox" ></input>
+    <input className='cb' type="checkbox" required></input>
     <lable className='la'>Remember Me</lable><br></br><br></br>
     <button className='but' type='submit'>Login</button><br></br><br></br>
     <a className='al' href='#'>Forget password</a>

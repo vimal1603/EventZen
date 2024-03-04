@@ -8,13 +8,9 @@ import SlideShow from './SlideShow';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 const Home = () => {
-  const [username, setUsername] = useState('');
-  const [log, setLog] = useState(false);
-
+  const [l1, setL1] = useState(localStorage.getItem("logg") || "logout");
   useEffect(() => {
-   
-    setUsername(localStorage.getItem('username'));
-    setLog(localStorage.getItem('log'));
+    setL1(localStorage.getItem("logg") || "logout");
   }, []); 
 
   const navigate=useNavigate();
@@ -51,15 +47,19 @@ const Home = () => {
           </div>
           <br></br>
           <br></br>
+          {l1 === "logout" &&
+            <div>
           <p style={{textAlign:'center',color:'whitesmoke',fontSize:30}}>Ready to manage your events smarter, better?
           </p>
           <button onClick={Click}className='button3'>Get Started</button>
+          </div>
+            }
           <br></br>
           <br></br>
           <h1 style={{color:'white'}}>Our Services</h1>
         <div className="ab">
           <span >
-            <EventCard1 />
+            <EventCard1/>
           </span>
         </div>
         <br></br>

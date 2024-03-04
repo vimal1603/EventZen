@@ -17,18 +17,18 @@ import logout from '../Images/log-out.png';
 const Nav = () => {
     const navigate=useNavigate();
     const [open, setOpen] = useState(false);
-  const [l1, setL1] = useState(localStorage.getItem("logg") || "logout"); // Initialize state with local storage value
-  
+  const [l1, setL1] = useState(localStorage.getItem("logg") || "logout"); 
+  const [username,setUsername]=useState('');// Initialize state with local storage value
   const handleLogout = () => {
     localStorage.setItem('logg', 'logout'); // Update local storage
     setL1("logout"); // Update state
-    navigate("/home");
+    navigate("/");
   };
   let menuRef = useRef();
   
   useEffect(() => {
     setL1(localStorage.getItem("logg") || "logout");
-   
+    setUsername(localStorage.getItem("username"));
 
   },[]);
   return (
@@ -36,7 +36,7 @@ const Nav = () => {
         
         <ul style={{listStyle:'none',display:'flex',color:'white',paddingBottom:'30px'}}>
             <li>
-                <a href='/home'><img src={img} height={50} width={50} style={{borderRadius:'50%'}}></img></a>
+                <a href='/'><img src={img} height={50} width={50} style={{borderRadius:'50%'}}></img></a>
             </li>
             <li style={{paddingLeft:'60vw',paddingTop:'0px'}}>
             <NavSlide/>
@@ -66,9 +66,12 @@ const Nav = () => {
                 </div>
         
                 <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
-                  {/* <h3 style={{color:'white'}}><br/></h3> */}
                   <ul class='dr'>
+                    <li>
+                      <h3 style={{color:'white',paddingRight:'50px'}}>{username}</h3>
+                    </li>
                     <li style={{display:'flex'}}>
+
                       <img height={40} width={40}src={user}></img>
                       <a href='' style={{paddingLeft:'20px'}}>My Profile</a>
                     </li>
@@ -84,11 +87,9 @@ const Nav = () => {
               </div>
             </div>
             </div>
-            
             </div>
             }
         
-        <br></br>
         </ul>
         <Outlet/>
     </div>

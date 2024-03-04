@@ -16,7 +16,7 @@ const SignInSide = () => {
   { 
       setLogg("login");
       localStorage.setItem('logg', 'login'); // Update local storage with the new value
-      navigate('/home');
+      navigate('/');
   }
   const Change = (e) =>
   {

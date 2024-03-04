@@ -22,7 +22,7 @@ const Corp = () => {
       <br/>
       <br/>
       <center>
-          <div style={{backgroundColor:"rgb(60,50,60)"}}><h3 className='h32'>
+          <div style={{backgroundColor:"rgb(60,50,60)",height:'40vh'}}><h3 className='h32'>
           Welcome to EventZen, a nationally recognized event planning and organizing company based in Coimbatore. We embarked on our journey with a mission to provide comprehensive solutions for all your event-related worries. EventZen specializes in corporate event management, BTL activation, and is highly recommended for conference event organizing and exhibition stall designing. As the premier Event Management Agency in Mumbai, EventZen prides itself on offering more than just event organizing services. We are thrilled to introduce STAGE WORLD, our complete production house equipped with the experience and capabilities to produce and manage exhibitions and events. Our in-house staging unit, fabrication, and designing workshop, along with audiovisual equipment and basic sound, serve as our greatest assets. EventZen ensures state-of-the-art equipment, technical staff, and experienced event support around the world.
           </h3></div>
         <div className="content-container"><br></br>

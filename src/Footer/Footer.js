@@ -13,16 +13,26 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <h3>EVENTZEN</h3>
-                    <p>EventZen is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the world. As the leading wedding designers and event organisers in Delhi and Gurgaon, we are renowned to create authentic experiences worth cherishing for a lifetime.</p>
+                    <p>EventZen is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the world. As the leading wedding designers and event organisers in Coimbatore, we are renowned to create authentic experiences worth cherishing for a lifetime.</p>
                 </div>
 
-                <div className="footer-sectionn">
+                <div className="footer-section1">
                     <h3>ADDRESS</h3>
                     <p>Sri Krishna College of technology,<br />Kovaiputhur,Arivoli Nagar<br />Coimbatore,<br />Tamil Nadu-641042</p>
                 </div>
-
-                <div className="footer-sectionnn">
-                    <h3>Contact Us</h3>        
+                <div className='footer-section3'>
+                    <h3>Quick Links</h3>
+                    <a href='/'>Home</a>
+                    <br/>
+                    <a href='/birthday'>Events</a>
+                    <br/>
+                    <a href='/aboutus'>About Us</a>
+                    <br/>
+                    <a href='/contactus'>Contact Us</a>
+                    <br/>
+                </div>
+                <div className="footer-section2">
+                    <h3 style={{width:'40vw'}}>Contact Us</h3>        
                       <div className="social-icons">
                         <a href="https://www.instagram.com/" target="_blank" ><img src={i1} alt="Instagram" /></a>
                         <a href="https://www.facebook.com/" target="_blank"><img src={f1} alt="Facebook" /></a>

@@ -20,7 +20,7 @@ const SlideShow = () => {
 
   return (
     <div className="slideshow">
-      <img style={{borderRadius:'30px'}} height={"600vh"} width={"1100vw"} src={images[currentIndex]}  />
+      <img style={{borderRadius:'30px'}} height={"450vh"} width={"900vw"} src={images[currentIndex]}  />
     </div>
   );
 };

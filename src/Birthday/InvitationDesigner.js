@@ -13,23 +13,18 @@ const InvitationCard = () => {
     const [showInvitation1, setShowInvitation1] = useState(false);
     const [showInvitation2, setShowInvitation2] = useState(false);
     const [wedtime,setWedtime]=useState();
-    
-  
     const cardRef = useRef(null);
-
     const handleDownload = () => {
-      // Capture card content as an image using html2canvas
+      
       html2canvas(cardRef.current).then(canvas => {
-        // Convert the image to a data URL
+       
         const imageUrl = canvas.toDataURL('image/png');
   
-        // Create a new jsPDF instance
+        
         const pdf = new jsPDF();
   
-        // Add the image to the PDF document
+        
         pdf.addImage(imageUrl, 'PNG', 0, 0);
-  
-        // Save the PDF document
         pdf.save('card.pdf');
       });
     }

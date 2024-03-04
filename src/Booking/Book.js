@@ -10,7 +10,7 @@ const Book = () => {
     {
         localStorage.setItem('eventDate', eventDate);
         alert("Our Team will Contact you Shortly")
-        navigate('/home');
+        navigate('/');
     }
     const handleDate = (e) =>
     {

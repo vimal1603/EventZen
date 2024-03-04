@@ -54,7 +54,11 @@ const Birthday = () => {
           <img src={b1}></img>
           <p class='para' style={{marginTop:'150px'}}>"Design and download unique invitations with ease, adding a touch of creativity to your event planning process."</p>
           </div>
+          <br></br>
+          <br></br>
+          <center>
           <button className="book" onClick={Clickinvite}>CREATE ONE</button>
+          </center>
           <br></br>
           <br></br>
           <center>
