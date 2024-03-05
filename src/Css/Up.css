@@ -5,16 +5,18 @@
     margin-top: -50px;
     margin-left: 550px;
     margin-right: 550px;
-    border-radius: 10px; 
-    height: auto;
-    width:auto;
+    border-radius: 10px;  
+    height: 110vh;
+    width:60vh;
+    
     background-image: url('../Images/bac.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    justify-content: center;
     box-shadow: 10px 10px 6px rgba(155, 151, 151, 0.674);
     color: aliceblue;
 }
+
 .vi{
     background-color: rgba(255, 255, 255, 0.437);  
 }

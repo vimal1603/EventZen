@@ -3,6 +3,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px ;
+    
   }
   
   .footer-content {
@@ -24,7 +25,7 @@ footer {
     padding-left: 3%;
   }
   .footer-section2 {
-    width: 5vw;
+    width: 25vw;
     margin-bottom: 20px;
     padding-left: 3%;
     

@@ -22,7 +22,7 @@ const Birthday = () => {
     navigate("/birthinvite")
   }
   return (
-    <>
+    <div >
       <div class='birthdaybox'>
       
         
@@ -70,7 +70,7 @@ const Birthday = () => {
           </center>
         </div>
         <Footer/>
-    </>
+    </div>
   );
 }
 

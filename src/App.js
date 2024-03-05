@@ -16,6 +16,7 @@ import Pricing from './Pricing/Pricing';
 import Drop from './Drop/Drop';
 import InvitationCard from './InvitationCard/InvitationCard';
 import InvitationDesigner from "./Birthday/InvitationDesigner"
+import Profile from "./Profile/Profile";
 function App() {
 
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/drop' element={<Drop />}/>
         <Route path="/invitation" element={<InvitationCard eventDate={localStorage.getItem('eventDate')}/>}/>
         <Route path="/birthinvite" element={<InvitationDesigner/>}/>
+        <Route path='/profile' element={<Profile name={localStorage.getItem('name')}/>}/>
         </Route>
     </Routes>
     </BrowserRouter>

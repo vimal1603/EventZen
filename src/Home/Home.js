@@ -19,7 +19,7 @@ const Home = () => {
     navigate('/signup')
   }
   return (
-    <div>
+    <div >
     <div className="container">
       <div>
         <center>
@@ -31,8 +31,8 @@ const Home = () => {
           <h1 style={{ color: 'white' }}>Transforming Your Vision into Unforgettable Moments. <br /> Where Every Celebration Finds Perfect Harmony</h1>
           <br />
           <br />
-          
-          <div style={{backgroundColor:"rgba(4,37,93)" }}>
+          </center>
+          <div style={{backgroundColor:"rgba(4,37,93)",width:'100%'}}>
             <br></br>
             <p style={{fontSize:'30px',color:'white',textAlign:'center'}}>End-to-end event planning</p>
           <div style={{ display: 'flex',alignItems: 'center',backgroundColor:"rgb(6,38,95)" }}>
@@ -45,6 +45,7 @@ const Home = () => {
           <p style={{ color: 'white', fontSize: 'clamp(18px, 3vw, 25px)' }}>100+ successful events and countless memories made</p>
           <br></br>
           </div>
+          
           <br></br>
           <br></br>
           {l1 === "logout" &&
@@ -64,7 +65,7 @@ const Home = () => {
         </div>
         <br></br>
         <br></br>
-        </center>
+       
         
       </div>
     </div>

@@ -6,7 +6,7 @@ import ins from'../Images/ins.png'
 import x from '../Images/x.jpg'
 import go from '../Images/go.png'
 import img2 from '../Images/back.jpg'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 const SignUp = () => {
   const navigate=useNavigate();
@@ -25,6 +25,7 @@ const SignUp = () => {
    
   const Click = () =>
   {
+    
     const userData = {
       firstName: firstName,
       lastName: lastName,
@@ -43,6 +44,7 @@ const SignUp = () => {
         console.error("Error:", error);
       }); 
     setSign(true);
+    
   }
   const Change = (e) =>
   {
@@ -56,10 +58,11 @@ const SignUp = () => {
   {
     setSign(true);
   }
-  const fetchUserData = () => {
+  const fetchUserData = () => { 
     axios.get("https://jsonplaceholder.typicode.com/users")
       .then(response => {
         const userData = response.data;
+        console.log("=====>>>>>>",response)
         const user = userData.find(user => user.username === username ||  postedData.username1 === username);
         if (user) {
           
@@ -74,6 +77,7 @@ const SignUp = () => {
           console.log("User not found");
           setError('Invalid username or password');
           alert(error || "Invalid credentials");
+          navigate('/')
         }
       })
       .catch(error => {
@@ -86,8 +90,9 @@ const SignUp = () => {
     e.preventDefault();
     fetchUserData();
   }
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   return (
-    <div>
+    <div style={{height:'50vh'}}>
       <br></br>
       <br></br>
       <br></br>
@@ -95,7 +100,7 @@ const SignUp = () => {
     {!sign && 
     <div><form onSubmit={Click} className='sig'><br></br>
       <center><img src={img1} alt='loading'height={90} width={90} style={{borderRadius:'50%'}}></img><br></br>
-      <h2>Sign Up</h2>
+      <h2>SIGN UP</h2>
       <input className='in' type='text' placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} required></input>
           <input className='in' type='text' placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} required></input><br></br><br></br>
           <input className='ina' type='text' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} required></input><br></br><br></br>
@@ -118,7 +123,7 @@ const SignUp = () => {
       <img className='im'src={img2} height={550}width={600} ></img>
       <form onSubmit={handleLogin}className='log'><br></br>
       <img src={img1} alt='loading'height={90} width={90} style={{borderRadius:'50%'}}></img><br></br>
-      <center><h1 style={{color:'white'}}>Sign In</h1></center>
+      <center><h1 style={{color:'white'}}>SIGN IN</h1></center>
     <input className='ina' type='text' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)}></input><br></br>
     <br></br>
     <input required className='ina' type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} ></input><br></br><br></br>
@@ -127,6 +132,7 @@ const SignUp = () => {
     <button className='but' type='submit'>Login</button><br></br><br></br>
     <a className='al' href='#'>Forget password</a>
     <button className='switch' onClick={Click1}>New User?</button><br></br><br></br>
+    
     </form>
     </div>
     </div>

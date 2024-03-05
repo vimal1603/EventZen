@@ -10,7 +10,6 @@
     border-color: aliceblue;
     border-right: 0px;
     margin-left: 250px;
-    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-bottom: 50px; 
@@ -23,17 +22,20 @@
     border-left: 50px;
     margin-bottom: 50px;
     border-color: aliceblue;
-   width: 400px;
+    width: 310px;
+    min-width:min-content;
+    max-width: max-content;
     padding-left: 50px;
     margin-right: 200px;
     padding-right: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: auto;
-    width:auto;
     background-image: url('../Images/bac.jpg');
     background-size: 1280px;
     box-shadow: 10px 10px 6 px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .ty{
     color: aliceblue;

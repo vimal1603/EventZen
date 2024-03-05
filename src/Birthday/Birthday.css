@@ -3,8 +3,8 @@
   {
     display: flex;
     background-color: #2E3B4E;
-    max-width:  'auto';
-    min-width: 'auto';
+    width: 100%;
+    
   }
   .birthdaybox img
   {
@@ -42,9 +42,7 @@
     overflow: hidden;
   }
   
-  .image-container img {
-    
-     
+  .image-container img { 
     border-radius: 20px;
   }
   

@@ -99,7 +99,7 @@ const InvitationCard = () => {
             required
           />
 
-          <label>Wedding Time:</label>
+          <label>Event Time:</label>
           <input 
           type="time"
           value={wedtime}

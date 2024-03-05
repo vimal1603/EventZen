@@ -13,7 +13,7 @@ import { useRef } from 'react'
 import Drop from "../Drop/Drop"
 import user from '../Images/user.png';
 import logout from '../Images/log-out.png';
-
+import { Link } from 'react-router-dom'
 const Nav = () => {
     const navigate=useNavigate();
     const [open, setOpen] = useState(false);
@@ -32,7 +32,7 @@ const Nav = () => {
 
   },[]);
   return (
-    <div>
+    <div style={{width:'100%'}}>
         
         <ul style={{listStyle:'none',display:'flex',color:'white',paddingBottom:'30px'}}>
             <li>
@@ -70,11 +70,12 @@ const Nav = () => {
                     <li>
                       <h3 style={{color:'white',paddingRight:'50px'}}>{username}</h3>
                     </li>
-                    <li style={{display:'flex'}}>
+                    {/* <li style={{displa/y:'flex'}}> */}
 
-                      <img height={40} width={40}src={user}></img>
-                      <a href='' style={{paddingLeft:'20px'}}>My Profile</a>
-                    </li>
+                      {/* <img height={40} width={40}src={user}></img>
+                      <a href='' style={{paddingLeft:'20px'}}>My Profile</a> */}
+                      
+                    {/* </li> */}
                     {/* <DropdownItem img = {edit} text = {"Edit Profile"}/>  
                     <DropdownItem img = {settings} text = {"Settings"}/>
                     <DropdownItem img = {help} text = {"Helps"}/> */}

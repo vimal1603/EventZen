@@ -20,6 +20,17 @@ const Footer = () => {
                     <h3>ADDRESS</h3>
                     <p>Sri Krishna College of technology,<br />Kovaiputhur,Arivoli Nagar<br />Coimbatore,<br />Tamil Nadu-641042</p>
                 </div>
+                
+                <div className="footer-section2">
+                    <h3 style={{width:'40vw'}}>Contact Us</h3>        
+                      <div className="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank" ><img src={i1} alt="Instagram" /></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src={f1} alt="Facebook" /></a>
+                        <a href="https://twitter.com/" target="_blank" ><img src={t1} alt="Twitter" /></a>
+                        <a href="mailto:info@vzevents.in"><img src={g1} alt="Gmail" /></a>
+                        <a href="https://www.youtube.com/" target='_blank'><img src={y1} alt="You Tube" /></a>
+                    </div>
+                </div>
                 <div className='footer-section3'>
                     <h3>Quick Links</h3>
                     <a href='/'>Home</a>
@@ -31,19 +42,9 @@ const Footer = () => {
                     <a href='/contactus'>Contact Us</a>
                     <br/>
                 </div>
-                <div className="footer-section2">
-                    <h3 style={{width:'40vw'}}>Contact Us</h3>        
-                      <div className="social-icons">
-                        <a href="https://www.instagram.com/" target="_blank" ><img src={i1} alt="Instagram" /></a>
-                        <a href="https://www.facebook.com/" target="_blank"><img src={f1} alt="Facebook" /></a>
-                        <a href="https://twitter.com/" target="_blank" ><img src={t1} alt="Twitter" /></a>
-                        <a href="mailto:info@vzevents.in"><img src={g1} alt="Gmail" /></a>
-                        <a href="https://www.youtube.com/"><img src={y1} alt="You Tube" /></a>
-                    </div>
-                </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; EVENTZEN & ENTERTAINMENTS PVT.LTD 2018, All right need to be reserved.</p>
+                <p>&copy; EVENTZEN PVT.LTD 2024, All rights reserved.</p>
             </div>
         </footer>
     );

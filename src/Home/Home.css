@@ -3,23 +3,28 @@
 {
     display: flex;
     padding: 50px;
-    height: 300px;
+    height: 40vh;
 }
 .ab span
 {
-    padding-left: 40px;
+    padding-left: 4%;
 }
 .content
 {
-    height: 20vh;
+    height: 20vh;   
     
 }
 .container {
     display: flex;
     justify-content: center;
-    max-width:100%;
+    /* max-width:100%; */
+    align-items: center;
+    text-align: center;
+    min-width:min-content;
+    max-width: max-content;
     min-height: 100vh;
     max-height: 300vh;
+    padding-left: 70px;
   }
   .button3
 {
